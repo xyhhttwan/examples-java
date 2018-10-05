@@ -3,9 +3,7 @@ package limiter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/**
- * @author zuochi
- */
+
 public class InvokeRateLimiter {
     private static Logger logger = LoggerFactory.getLogger(InvokeRateLimiter.class);
     private long rate = 0;// unit: requests/s

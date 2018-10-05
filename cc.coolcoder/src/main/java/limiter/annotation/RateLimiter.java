@@ -3,9 +3,6 @@ package limiter.annotation;
 import java.lang.annotation.*;
 
 /**
- * @author zuochi
- * @version 1.0.0
- * @date 2017/11/6
  *
  * 调用频率限制器
  *

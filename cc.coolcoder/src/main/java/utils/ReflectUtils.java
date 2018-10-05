@@ -4,9 +4,7 @@ import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
-/**
- * Created by liquan on 2017/4/11.
- */
+
 public class ReflectUtils {
     /**
      * 获取成员变量的修饰符

@@ -1,6 +1,7 @@
 package utils;
 
-import com.imzhiliao.mss.service.enums.UserAgentEnum;
+
+import enums.UserAgentEnum;
 
 public class UserAgentUtils {
 

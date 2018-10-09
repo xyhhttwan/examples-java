@@ -1,6 +1,7 @@
 package annotation;
 
-import com.imzhiliao.mss.common.annotation.enums.APIEnum;
+
+import annotation.enums.APIEnum;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

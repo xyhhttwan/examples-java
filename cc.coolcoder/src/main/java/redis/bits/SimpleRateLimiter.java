@@ -1,5 +1,6 @@
 package redis.bits;
 
+import com.google.common.base.Strings;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.Pipeline;
 import redis.clients.jedis.Response;

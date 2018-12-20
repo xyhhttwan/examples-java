@@ -7,19 +7,30 @@ import java.util.List;
 
 public class Consumer {
 
-    public static int consumerQuene(String messageId) {
 
-        try {
-            List<String> resultList = RedisClient.Instance().blpop(1000, messageId);
-            for (String res : resultList) {
-                System.out.println(res);
+    private static String destinationList="destinationList";
+
+    public static void consumerQuene(String messageId) {
+
+        while (true) {
+            try {
+                String resultList = RedisClient.Instance().brpoplpush(messageId, destinationList, 0);
+                processMeaage(resultList);
+            } catch (Exception exception) {
+                System.err.println("发生异常:" + exception.getMessage());
+                exception.printStackTrace();
+                continue;
             }
-        } catch (JedisConnectionException exception) {
-            System.out.println("======");
-            exception.printStackTrace();
         }
 
-        return 1;
+    }
+
+    private static void processMeaage(String resultList) {
+        System.out.println("处理结果:" + resultList);
+        delDestinationList();
+    }
+
+    private static void delDestinationList() {
 
     }
 

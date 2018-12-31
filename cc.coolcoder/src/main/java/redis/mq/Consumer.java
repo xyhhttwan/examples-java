@@ -27,6 +27,7 @@ public class Consumer {
 
     private static void processMeaage(String resultList) {
         System.out.println("处理结果:" + resultList);
+        //process(resultList);
         delDestinationList();
     }
 

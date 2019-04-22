@@ -11,7 +11,7 @@ import java.util.List;
 public class zk {
 
     public static void main(String[] args) {
-        String connectString = "127.0.0.1:2181";
+        String connectString = "dubbo.zk.url:2181";
         int sessionTimeout = 4000;
         Watcher watcher = new Watcher() {
             @Override

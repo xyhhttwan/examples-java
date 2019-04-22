@@ -10,7 +10,7 @@ public class RedisClient {
 
         if (null == redis) {
             Jedis jedis = new Jedis("101.200.62.224", 6379);
-           jedis.auth("redis#@123456");
+            jedis.auth("redis#@123456");
             redis = jedis;
         }
 

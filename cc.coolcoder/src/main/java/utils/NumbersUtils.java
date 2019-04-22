@@ -41,7 +41,7 @@ public class NumbersUtils {
 
 
 
-    public static final String format(BigDecimal bigDecimal,String format) {
+   synchronized public static final String format(BigDecimal bigDecimal,String format) {
         if(bigDecimal == null) {
             return "";
         }

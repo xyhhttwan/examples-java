@@ -7,7 +7,7 @@ import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 
 /**
- * 自定义独占锁 补课重入
+ * 自定义独占锁 不可重入
  */
 public class NonReentrantLock implements Lock, Serializable {
 
@@ -76,7 +76,7 @@ public class NonReentrantLock implements Lock, Serializable {
 
     @Override
     public boolean tryLock(long time, TimeUnit unit) throws InterruptedException {
-        return sync.tryAcquire(1, unit.toNanos());
+        return sync.tryAcquire(1);
 
     }
 

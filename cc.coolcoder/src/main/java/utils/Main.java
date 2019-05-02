@@ -1,5 +1,7 @@
 package utils;
 
+import java.util.concurrent.locks.ReentrantLock;
+
 public class Main {
 
     void  onlyMe(Integer my){
@@ -9,6 +11,7 @@ public class Main {
     }
 
     synchronized  void doSomeThing(){
+        ReentrantLock lock = new ReentrantLock();
         System.out.println("====");
     }
 }

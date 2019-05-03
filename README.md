@@ -15,6 +15,10 @@
 - 反射
 - map对象
 - zk 客户端
-
+#### 设计模式
+- builder
+- wrapper
+- factory
+- single
 #### 博客地址
 https://coolcoder.cc

@@ -10,6 +10,8 @@ public class Main {
         MySqlSession sqlSession = new MyDefaultSqlSession();
         UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
         User user = userMapper.findByUserId(1);
+
+        userMapper.insertUser(null);
         System.out.println("user:" + user);
     }
 }

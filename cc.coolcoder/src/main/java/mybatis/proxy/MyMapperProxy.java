@@ -27,7 +27,6 @@ public class MyMapperProxy implements InvocationHandler {
         if (methodClassName.equals(UserMapperXml.NAME_SPACE)) {
             String methodName = method.getName();
             String originSql = UserMapperXml.getMethodSql(methodName);
-
             String sql = originSql.replace("#{id}", String.valueOf(args[0]));
             return mySqlSession.selectOne(sql);
         }
